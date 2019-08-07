@@ -1,21 +1,15 @@
 package pl.homework.lib;
 
 public abstract class Shape3D extends Shape {
-    public double segment;
-
     public Shape3D() {
     }
 
-    public Shape3D(String name, double segment) {
+    public Shape3D(String name) {
         super(name);
-        this.segment = segment;
     }
 
-    public double getSegment() {
-        return segment;
-    }
-
-    public void setSegment(double segment) {
-        this.segment = segment;
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
