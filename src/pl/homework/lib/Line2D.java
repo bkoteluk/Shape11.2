@@ -10,7 +10,7 @@ public class Line2D extends Shape2D {
     }
 
     public Line2D(String name, double x1, double y1, double x2, double y2) {
-        super(name);
+        setName(name);
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;

@@ -25,11 +25,21 @@ public class ShapeCalculator extends LineCalc implements Calc2D, Calc3D {
 
     @Override
     public double volume(Shape3D shape) {
-        return shape instanceof Ball ? ballVolume((Ball)shape) : cubeVolume((Cube)shape);
+        if (shape instanceof Ball) {
+            return ballVolume((Ball)shape);
+        } else if (shape instanceof Cube) {
+            return cubeVolume((Cube)shape);
+        } else
+            return 0;
     }
 
     @Override
     public double shapeArea(GeometricShape shape) {
-        return shape instanceof Circle ? circleArea((Circle)shape) : rectangleArea((Rectangle)shape);
+        if (shape instanceof Circle) {
+            return circleArea((Circle)shape);
+        } else if (shape instanceof Rectangle) {
+            return rectangleArea((Rectangle)shape);
+        } else
+            return 0;
     }
 }

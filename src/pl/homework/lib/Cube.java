@@ -7,7 +7,7 @@ public class Cube extends Shape3D {
     }
 
     public Cube(String name, double side) {
-        super(name);
+        setName(name);
         this.side = side;
     }
 

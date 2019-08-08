@@ -7,7 +7,7 @@ public class Ball extends Shape3D {
     }
 
     public Ball(String name, double radius) {
-        super(name);
+        setName(name);
         this.radius = radius;
     }
 

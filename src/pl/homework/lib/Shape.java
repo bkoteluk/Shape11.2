@@ -1,7 +1,7 @@
 package pl.homework.lib;
 
 public abstract class Shape {
-    String name;
+    private String name;
 
     public Shape() {
     }

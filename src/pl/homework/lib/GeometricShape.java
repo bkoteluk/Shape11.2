@@ -6,11 +6,11 @@ public abstract class GeometricShape extends Shape2D {
     }
 
     public GeometricShape(String name) {
-        super(name);
+        setName(name);
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return getName();
     }
 }
